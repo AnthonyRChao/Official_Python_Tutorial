@@ -3,9 +3,50 @@
 ## 1. Whetting Your Appetite
 ## 2. Using the Python Interpreter
 ## 3. An Informal Introduction to Python
+
 ## 4. More Control Flow Tools
 
-## 5. Data Structures
+### 4.7.2 Keyword Arguments
+
+What are they?
+
+Use them in an example.
+
+### 4.7.3 Arbitrary Argument Lists
+
+What is this concetp and where would you use this?
+
+### 4.7.4 Unpacking Argument Lists
+
+What is this concept and where would you use this?
+
+### 4.7.5 Lambda Expressions
+
+pairs = [(1, 'one'), (2, 'two'), (3, 'three'), (4, 'four')]
+pairs.sort(key=lambda pair: pair[1])
+pairs
+
+Explain how the above function executes.
+What do you expect the output to be?
+
+## 5. Data Structures 
+
+Stack: Last In, First Out (Think of a stack of trays at a cafeteria)
+Queue: First In, First Out (Think of a line at the Apple Store)
+
+### 5.1.3. List Comprehensions
+
+List comprehensions provide a concise way to create lists.
+
+E.g. Create a list of squares:
+
+squares = []
+for x in range(10):
+	squares.append(x**2)
+
+squares = list(map(lambda x: x**2, range(10)))
+
+squares = [x**2 for x in range(10)]
 
 ### 5.3. Tuples and Sequences
 
@@ -123,6 +164,7 @@ Using a module, we can put defintions in a file and use them in a script or in a
 See `fibo.py`
 
 ### 6.1.  More on Modules
+
 #### 6.1.1. Executing modules as scripts
 
 When you run a Python module with
